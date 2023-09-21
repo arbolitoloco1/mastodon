@@ -1,5 +1,5 @@
 /* Mastodon Bird UI by @rolle@mementomori.social
-   1.7.3rc7-nightly */
+   1.7.5rc3-nightly */
 
 /* CSS variables */
 :root {
@@ -160,7 +160,7 @@
 }
 
 /* High Contrast theme */
-body.theme-contrast.layout-multiple-columns {
+body.theme-mastodon-bird-ui-contrast.layout-multiple-columns {
   --color-dim: #b8b3c0;
 
   /* Icons */
@@ -181,7 +181,7 @@ body.theme-contrast.layout-multiple-columns {
 }
 
 /* Light theme */
-body.theme-mastodon-light.layout-multiple-columns {
+body.theme-mastodon-bird-ui-light.layout-multiple-columns {
   --color-bg: #fff;
   --color-fg: #000;
   --color-border: #e6e1ed;
@@ -1923,6 +1923,7 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   transition: all 200ms;
 }
 
+.layout-multiple-columns .dropdown-menu__item a:hover,
 .layout-multiple-columns .notification__filter-bar button:hover,
 .layout-multiple-columns .account__section-headline a:hover {
   background-color: var(--color-column-link-hover);
@@ -1971,8 +1972,14 @@ body.embed .detailed-status__meta .detailed-status__link .fa-retweet,
   border-bottom-right-radius: 9999px;
   border-top-left-radius: 9999px;
   border-top-right-radius: 9999px;
+  bottom: -1px;
+  content: "";
+  display: block;
   height: 4px;
+  left: 50%;
   min-width: 56px;
+  position: absolute;
+  transform: translateX(-50%);
 }
 
 .layout-multiple-columns .account__section-headline a.active::before,
