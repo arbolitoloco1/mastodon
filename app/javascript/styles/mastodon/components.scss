@@ -1396,10 +1396,16 @@ body > [data-popper-placement] {
   line-height: 18px;
 
   .icon {
-    width: 15px;
-    height: 15px;
+    width: 14px;
+    height: 14px;
     position: relative;
     top: 0.145em;
+  }
+
+  .dropdown-menu__text-button {
+    .icon-caret-down {
+      top: 0px;
+    }
   }
 }
 
@@ -7419,6 +7425,13 @@ noscript {
 
           span {
             user-select: all;
+          }
+
+          .icon-lock {
+            height: 15px;
+	          width: 15px;
+	          position: relative;
+	          top: 2.5px;
           }
         }
       }
